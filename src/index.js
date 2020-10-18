@@ -101,3 +101,32 @@ console.log(Math.ceil(7.8)); // lo redondea al siguiente numero
 console.log(Math.floor(7.8)); // lo redondea al numero menor
 console.log(Math.round(7.4)); // lo redondea el numero ya sea al menor o mayor
 console.log(Math.round(Math.random() * 1000));
+
+// expresiones regulares
+
+const lorem =
+  "Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, amet illum ab dicta laborum vero accusantium necessitatibus est, corporis provident, dolorum ad cum voluptatem nulla veritatis facere unde quos incidunt.";
+
+const exprecionReg = /dolor/gi;
+
+console.log(exprecionReg.test(lorem));
+console.log(exprecionReg.exec(lorem));
+
+// funciones anonimas autoejecutables
+
+(function () {
+  console.log("forma clasica");
+})();
+/* ((function () {
+  console.log("forma coofor");
+})());
+
+
++function () {
+  console.log("Forma unaria");
+}();
+
+
+!function () {
+  console.log("forma facebbok");
+}(); */
